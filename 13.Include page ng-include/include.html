@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html ng-app="emplypeeModel">
+<head>
+    <meta charset="UTF-8">
+    <title>ng-include</title>
+    <script src="../angular.js"></script>
+    <script src="scriptEmployee.js"></script>
+    <link rel="stylesheet" href="../css/tableStyle.css">
+</head>
+<body ng-controller="employeeCtrl">
+   {{test}}
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Salary</th>
+        </tr>
+        <tr ng-repeat="employee in employees">
+            <td>{{employee.name}}</td>
+            <td>{{employee.salary}}</td>
+        </tr>
+    </table>
+    <br>
+    <div ng-include="'Employee.html'"></div>
+    <br>
+    <div ng-include="employeeTable"></div>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html ng-app="myModule">
+<head>
+    <meta charset="UTF-8">
+    <title>Shorting</title>
+    <script src="../angular.js"></script>
+    <script src="Script-2.js"></script>
+    <script src="filter.js"></script>
+    <link rel="stylesheet" href="../css/tableStyle.css">
+    
+</head>
+<body>
+    <div ng-controller="myController">
+      <table>
+          <thead>
+              <tr>
+              <th>Name</th>
+              <th>Gender</th>
+              <th>Salary</th>
+              <th>City</th>
+          </tr>
+          </thead>
+          <tbody>
+              <tr ng-repeat="employee in employees">
+                  <td>{{employee.name}}</td>
+                  <td>{{employee.gender | filterGender}}</td>
+                  <td>{{employee.city}}</td>
+                  <td>{{employee.salary}}</td>
+              </tr>
+          </tbody>
+      </table>
+        
+    </div>
+</body>
+</html>

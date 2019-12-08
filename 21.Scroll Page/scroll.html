@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="../angular.js"></script>
+    <script src="Script.js"></script>
+    <style>
+        #content{
+            width: 200px;
+        }
+    </style>
+</head>
+<body ng-app="myModule">
+    <div ng-controller="myController">
+       <button id="top" ng-click="scrollTo('bottom')">Goto Bottom</button>
+        <div id="content">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto tenetur nostrum obcaecati blanditiis architecto alias deleniti sequi eius culpa, iure voluptatem perferendis, perspiciatis rerum beatae explicabo ratione qui? Deleniti, autem.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto tenetur nostrum obcaecati blanditiis architecto alias deleniti sequi eius culpa, iure voluptatem perferendis, perspiciatis rerum beatae explicabo ratione qui? Deleniti, autem.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto tenetur nostrum obcaecati blanditiis architecto alias deleniti sequi eius culpa, iure voluptatem perferendis, perspiciatis rerum beatae explicabo ratione qui? Deleniti, autem.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto tenetur nostrum obcaecati blanditiis architecto alias deleniti sequi eius culpa, iure voluptatem perferendis, perspiciatis rerum beatae explicabo ratione qui? Deleniti, autem.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto tenetur nostrum obcaecati blanditiis architecto alias deleniti sequi eius culpa, iure voluptatem perferendis, perspiciatis rerum beatae explicabo ratione qui? Deleniti, autem.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto tenetur nostrum obcaecati blanditiis architecto alias deleniti sequi eius culpa, iure voluptatem perferendis, perspiciatis rerum beatae explicabo ratione qui? Deleniti, autem.
+        </div>
+        <button id="bottom" ng-click="scrollTo('top')">Goto Top</button>
+    </div>
+</body>
+</html>

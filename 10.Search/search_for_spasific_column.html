@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html ng-app="myModule">
+<head>
+    <meta charset="UTF-8">
+    <title>Shorting</title>
+    <script src="../angular.js"></script>
+    <script src="Script.js"></script>
+    <link rel="stylesheet" href="../css/tableStyle.css">   
+</head>
+<body>
+    <div ng-controller="myController">
+    Search <input type="text" placeholder="Search Name Or City" ng-model="searchText">
+     <br> <br>
+      <table>
+          <thead>
+              <tr>
+              <th>Name</th>
+              <th>Gender</th>
+              <th>City</th>
+              <th>Salary</th>
+          </tr>
+          </thead>
+          <tbody>
+              <tr ng-repeat="employee in employees | filter:searchText">
+                  <td>{{employee.name}}</td>
+                  <td>{{employee.gender }}</td>
+                  <td>{{employee.city}}</td>
+                  <td>{{employee.salary}}</td>
+              </tr>
+          </tbody>
+      </table>
+        
+    </div>
+</body>
+</html>

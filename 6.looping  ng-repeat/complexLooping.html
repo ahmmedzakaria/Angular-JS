@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html ng-app="myModule">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="../angular.js"></script>
+    <script src="Script_complex_looping.js"></script>
+    
+</head>
+<body>
+    <div ng-controller="myController">
+       <ul>
+           <li ng-repeat="division in divisions">
+               {{division.name}}
+               <ul>
+                   <li ng-repeat="district in division.districts">
+                       {{district.name}}
+                   </li>
+               </ul>
+           </li>
+           
+       </ul>
+        
+    </div>
+</body>
+</html>

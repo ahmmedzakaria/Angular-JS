@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html ng-app="myModule">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="../angular.js"></script>
+    <script src="Script.js"></script>
+    
+</head>
+<body>
+    <div ng-controller="myController">
+        <div>First Name: {{bird.name}}</div>
+        <div>Last Name: {{bird.country}}</div>
+        <div><img ng-src="{{bird.image}}" alt="Bird">  </div>
+        
+    </div>
+</body>
+</html>
